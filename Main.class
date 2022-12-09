@@ -1,0 +1,94 @@
+package Packet;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	
+		// Simple Basic Calculator...
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		char[] arr = new char[8];
+		
+		 arr[0] = '+';
+		 arr[1] = '-';
+		 arr[2] = 'x';
+		 arr[3] = '/';
+		 arr[4] = '√';
+		 arr[5] = '^';
+		 arr[6] = '%';
+		 arr[7] = 'π';
+		 
+		 
+		System.out.println("0");
+		
+		double inp = scan.nextDouble();
+		
+		
+		System.out.println("+" + "-" + "x" + "/");
+		
+		System.out.println("√ " + "^ " + "% " + "π");
+		
+		char prc = scan.next().charAt(0);
+		
+		
+		if(arr[0] == prc) {
+			
+			double inp2 = scan.nextDouble();
+			
+			System.out.println(inp + inp2 );
+		}
+		
+		else if(arr[1] == prc) {
+			
+			double inp2 = scan.nextDouble();
+			
+			System.out.println(inp - inp2);
+		}
+		
+		else if(arr[2] == prc) {
+			
+			double inp2 = scan.nextDouble();
+			
+			System.out.println(inp * inp2);
+		}
+		
+		else if(arr[3] == prc) {
+			
+			double inp2 = scan.nextDouble();
+			
+			System.out.println(inp / inp2);
+		}
+		
+		else if(arr[4] == prc) {
+			
+			System.out.println(Math.sqrt(inp));
+		}
+		
+		else if(arr[5] == prc) {
+			
+			int inp2 = scan.nextInt();
+			
+			System.out.println(Math.pow(inp,inp2));
+		}
+		
+		else if(arr[6] == prc) {
+			
+			int inp2 = scan.nextInt();
+			
+			System.out.println(inp%inp2);
+		}
+		
+		else if(arr[7] == prc) {
+			
+			System.out.println(Math.PI);
+		}
+		
+					
+		
+	}
+
+}
